@@ -1,0 +1,323 @@
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.main__info {
+    margin-top: 150px;
+    width: 100%;
+    max-width: 570px;
+}
+
+.main__info img {
+    width: 250px;
+    margin: 10px 0 0 100px;
+}
+
+.main__info p {
+    font-size: 18px;
+    margin: 10px 0 0 100px;
+}
+
+.main__info div {
+    display: flex;
+    column-gap: 35px;
+    margin: 50px 0 0 100px;
+}
+
+.main__info div a {
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 3px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    background: var(--red);
+    transform: skew(-10deg);
+}
+
+.main__info div a {
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--red);
+    z-index: 1;
+    
+}
+
+.main__info div a::before,
+.main__info div a::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--red);
+    transition: 1s ease;
+}
+
+.main__info div a::before {
+    top: -1em;
+    left: -1em;
+    
+}
+
+.main__info div a::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.main__info div a:hover::before,
+.main__info div a:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.main__info div a:hover {
+    color: rgb(21, 10, 30);
+    box-shadow: 1px 1px 200px #d11d1d;
+}
+
+.main__info div a:active {
+    filter: brightness(.8);
+}
+
+.featured-content {
+    height: 350px;
+}
+
+@media screen and (max-width: 1020px) {
+    .main__info p {
+        font-size: 9px;
+        margin: -50px 100px 0 30px;
+    }
+    .main__info img {
+        position: absolute;
+        width: 90px;
+        margin: -150px 240px 20px 30px;
+    }
+    .main__info div {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        width: 100%;
+        scale: 0.4;
+    }
+    .download_film {
+        top: 375px;
+        left: 190px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    max-width: 700px;
+    margin-top: 20%;
+    margin: 0 auto 32px;
+    border-radius: 16px;
+    background-color: #3300002d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 0, 0, 0.185);
+}
+
+article img {
+    height: 60px;
+}
+
+article name {
+    color: rgb(255 255 255 / 50%);
+}
+
+article p {
+    margin: 8px 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.button {
+    transform: translate(-50%, -50%);
+    top: 10px;
+    left: 50%;
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #79000070;
+    overflow: hidden;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #d11d1d;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 200px #d11d1d;
+    color: #fff;
+    border: none;
+}
+
+.type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inherited-styles-for-exported-element {
+    color: #ffffff;
+    font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 100%;
+  }
+
+  footer {
+      background-color: #3300002d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 0, 0, 0.185);
+    box-sizing: border-box;
+    left: 0;
+    padding: 10% 7%;
+    position: absolute;
+    width: 100%;
+  }
+
+
+
+  @media screen and (min-width: 768px) {
+    footer {
+      padding: 5rem 3rem;
+    }
+
+    .inner ul {
+      flex: 1;
+      margin: 0 2em;
+    }
+
+    .inner {
+      flex-direction: row;
+    }
+
+    .inner>:first-child {
+      display: block;
+      margin-right: 3em;
+      text-align: center;
+    }
+
+    .inner>:first-child img {
+      width: 70px;
+    }
+  }
